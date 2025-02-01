@@ -1,3 +1,4 @@
+/* Reset default margins and paddings */
 * {
     margin: 0;
     padding: 0;
@@ -11,31 +12,50 @@
     text-align: center;
 }
 
+/* Header Section */
 .div1 {
     background: #ffcc00;
     padding: 20px;
     font-size: 24px;
 }
 
+/* Main Content */
 .content {
     flex: 1;
-    background: #f4f4f4;
     padding: 20px;
     font-size: 24px;
+    background: #f4f4f4;
 }
 
+/* Footer Section */
 .footer {
     background: #e7008a;
     color: white;
     padding: 20px;
-    font-size: 16px;
     text-align: center;
     position: relative;
 }
 
-.footer svg {
-    width: 100%; 
-    height: auto; 
-    display: block; 
+.footer h1 {
+    font-size: 16px;
     margin-top: 10px;
+}
+
+/* Social Media Icons */
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.social-media-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-media-icons img:hover {
+    transform: scale(1.1);
 }
