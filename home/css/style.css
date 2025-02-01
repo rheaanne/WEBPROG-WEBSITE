@@ -11,14 +11,14 @@
     text-align: center;
 }
 
-.div1 {
+.div1, .footer {
     background: #f7ade5; 
-    margin: 10px auto; 
+    margin: 20px auto; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     border-radius: 10px; 
-    padding: 20px;
+    padding: 20px; 
     font-size: 24px; 
-    color: #333;
+    color: #333; 
     width: 80%; 
     text-align: center; 
 }
@@ -30,39 +30,26 @@
     background: #f4f4f4;
 }
 
-.footer {
-    background: #f7ade5; 
-    margin: 10px auto; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    border-radius: 10px; 
-    padding: 20px; 
-    font-size: 16px; 
-    color: #333; 
-    width: 80%; 
-    text-align: center; 
-}
-
 .footer h1 {
     font-size: 14px; 
-    margin-top: 10px; 
-    color: #333; 
+    margin-top: 10px;
+    color: #333;
 }
 
 .social-media-icons {
     display: flex;
     justify-content: center;
-    gap: 10px; 
-    margin-bottom: 10px; 
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 .social-media-icons img {
     width: 30px;
     height: 30px;
     border-radius: 50%; 
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 .social-media-icons img:hover {
     transform: scale(1.1); 
 }
-
