@@ -25,18 +25,17 @@
 }
 
 .footer {
-    position: relative;
     background: #e7008a;
     color: white;
     padding: 20px;
     font-size: 16px;
     text-align: center;
+    position: relative;
 }
 
 .footer svg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin-top: 10px;
 }
