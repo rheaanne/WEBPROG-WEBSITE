@@ -31,11 +31,15 @@
 }
 
 .footer {
-    background: #e7008a;
-    color: white;
-    padding: 10px 0; 
+    background: #f7ade5; 
+    margin: 10px auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    padding: 20px;
+    font-size: 24px; 
+    color: #333;
+    width: 80%; 
     text-align: center;
-    position: relative;
 }
 
 .footer h1 {
