@@ -35,33 +35,34 @@
     margin: 10px auto; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     border-radius: 10px; 
-    padding: 20px;
-    font-size: 24px; 
-    color: #333;
+    padding: 20px; 
+    font-size: 16px; 
+    color: #333; 
     width: 80%; 
-    text-align: center;
+    text-align: center; 
 }
 
 .footer h1 {
-    font-size: 12px; 
-    margin-top: 5px;
+    font-size: 14px; 
+    margin-top: 10px; 
+    color: #333; 
 }
-
 
 .social-media-icons {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 5px;
+    gap: 10px; 
+    margin-bottom: 10px; 
 }
 
 .social-media-icons img {
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
+    border-radius: 50%; 
+    transition: transform 0.3s ease; 
 }
 
 .social-media-icons img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); 
 }
+
