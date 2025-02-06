@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/style.css?version=0.3">
+    <link rel="stylesheet" href="css/swiper.css?version=0.1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rhea-Anne Danao</title>
@@ -9,7 +10,42 @@
 <body>
     <div class="parent">
         <div class="div1">Header Section</div>
-        <div class="content">Main Content Area</div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/cupcake-pink.png" alt="Cupcake Pink"></div>
+                <div class="swiper-slide"><img src="img/cupcake-blue.png" alt="Cupcake Blue"></div>
+                <div class="swiper-slide"><img src="img/cupcake-purple.png" alt="Cupcake Purple"></div>
+                <div class="swiper-slide"><img src="img/cupcake-red.png" alt="Cupcake Red"></div>
+                <div class="swiper-slide"><img src="img/cupcake-white.png" alt="Cupcake White"></div>
+                <div class="swiper-slide"><img src="img/cupcake-yellow.png" alt="Cupcake Yellow"></div>
+                <div class="swiper-slide"><img src="img/cupcake-black.png" alt="Cupcake Black"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    640: { slidesPerView: 2, spaceBetween: 20 },
+                    768: { slidesPerView: 3, spaceBetween: 30 },
+                    1024: { slidesPerView: 4, spaceBetween: 40 }
+                }
+            });
+        </script>
         <div class="footer">
             <footer>
                 <div class="social-media-icons">
