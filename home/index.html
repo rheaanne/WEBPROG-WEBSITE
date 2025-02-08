@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css?version=0.6">
-    <link rel="stylesheet" href="css/swiper.css?version=0.3">
+    <link rel="stylesheet" href="css/style.css?version=0.7">
+    <link rel="stylesheet" href="css/swiper.css?version=0.4">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rhea-Anne Danao</title>
@@ -12,19 +12,18 @@
         <div class="div1">Header Section</div>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><cupcakes src="img/cupcake1.png" alt="cupcake1"></div>
-                <div class="swiper-slide"><cupcakes src="img/cupcake2.png" alt="cupcake2"></div>
-                <div class="swiper-slide"><cupcakes src="img/cupcake3.png" alt="cupcake3"></div>
-                <div class="swiper-slide"><cupcakes src="img/cupcake4.png" alt="cupcake4"></div>
-                <div class="swiper-slide"><cupcakes src="img/cupcake5.png" alt="cupcake5"></div>
-                <div class="swiper-slide"><cupcakes src="img/cupcake6.png" alt="cupcake6"></div>
-                
+                <div class="swiper-slide"><img src="cupcakes/cupcake1.png" alt="cupcake1"></div>
+                <div class="swiper-slide"><img src="cupcakes/cupcake2.png" alt="cupcake2"></div>
+                <div class="swiper-slide"><img src="cupcakes/cupcake3.png" alt="cupcake3"></div>
+                <div class="swiper-slide"><img src="cupcakes/cupcake4.png" alt="cupcake4"></div>
+                <div class="swiper-slide"><img src="cupcakes/cupcake5.png" alt="cupcake5"></div>
+                <div class="swiper-slide"><img src="cupcakes/cupcake6.png" alt="cupcake6"></div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
-    
+
         <div class="footer">
             <footer>
                 <div class="social-media-icons">
@@ -42,6 +41,21 @@
             </footer>
         </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>
