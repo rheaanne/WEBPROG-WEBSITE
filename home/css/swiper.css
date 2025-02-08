@@ -6,19 +6,25 @@
 
 .swiper-wrapper {
     display: flex;
-    justify-content: center;  
-    align-items: center;  
+    align-items: center; /* Centers cupcakes vertically */
 }
 
 .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.5s ease-in-out; /* Smooth sliding */
 }
 
 .swiper-slide img {
-    width: 200px;  
+    width: 220px; /* Adjust cupcake size */
     height: auto;
     border-radius: 10px;
     object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Scale the center cupcake slightly to highlight it */
+.swiper-slide-active img {
+    transform: scale(1.2);
 }
