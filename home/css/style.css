@@ -9,22 +9,23 @@ body {
 
 header {
     background: pink;
-    padding: 1px;
+    padding: 5px;  /* Reduce padding */
     color: white;
     font-size: 20px;
 }
 
 footer {
     background: pink;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 5px;  /* Reduce padding */
+    margin-top: 10px;  /* Reduce top margin */
 }
 
 footer p {
     color: white;
-    font-size: 16px;
+    font-size: 14px; /* Slightly smaller text */
     margin: 0;
 }
+
 
 
 .social-media a img {
