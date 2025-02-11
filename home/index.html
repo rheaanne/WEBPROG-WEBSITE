@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css?version=0.12">
-    <link rel="stylesheet" href="css/swiper.css?version=0.9">
+    <link rel="stylesheet" href="css/style.css?version=0.13">
+    <link rel="stylesheet" href="css/swiper.css?version=0.10">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rhea-Anne Danao</title>
@@ -28,15 +28,9 @@
     <div class="footer">
         <footer>
             <div class="social-media-icons">
-                <a href="https://www.facebook.com/profile.php?id=61565180164018&mibextid=ZbWKwL" target="_blank">
-                    <img src="https://i.ibb.co/vJGGPhn/icon1.jpg" alt="Facebook"> 
-                </a>
-                <a href="https://www.instagram.com/iem_eyya?igsh=OGI1aWdiMXJxMmJk" target="_blank">
-                    <img src="https://i.ibb.co/LpCc5nN/icon2.jpg" alt="Instagram"> 
-                </a>
-                <a href="http://www.linkedin.com/in/rhea-anne-danao-a420bb289" target="_blank">
-                    <img src="https://i.ibb.co/D4Gw2vg/icon3.jpg" alt="LinkedIn"> 
-                </a>
+                <a href="https://www.facebook.com" target="_blank"><img src="https://i.ibb.co/vJGGPhn/icon1.jpg" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="https://i.ibb.co/LpCc5nN/icon2.jpg" alt="Instagram"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="https://i.ibb.co/D4Gw2vg/icon3.jpg" alt="LinkedIn"></a>
             </div>
             <h1>&copy; 2024 Rhea Anne Danao</h1>
         </footer>
@@ -45,10 +39,10 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: "auto",
+            slidesPerView: 1,
             centeredSlides: true,
-            spaceBetween: 20,
             loop: true,
+            spaceBetween: 20,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -57,16 +51,6 @@
                 el: ".swiper-pagination",
                 clickable: true,
             },
-            breakpoints: {
-                768: {
-                    slidesPerView: 3,
-                    centeredSlides: true,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    centeredSlides: true,
-                }
-            }
         });
     </script>
 </body>
