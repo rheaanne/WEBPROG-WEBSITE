@@ -1,29 +1,39 @@
-.header {
+body {
     text-align: center;
-    background-color: #ff66b2;
-    color: white;
+    font-family: Arial, sans-serif;
+    background-color: #fff0f5;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background: pink;
     padding: 15px;
-    font-size: 24px;
-    font-weight: bold;
-}
-.footer {
-    text-align: center;
-    background-color: #ff66b2;
     color: white;
-    padding: 15px;
     font-size: 24px;
-    font-weight: bold;
 }
-.footer h1 {
-    margin: 10px 0;
-    font-size: 18px;
+
+footer {
+    background: pink;
+    padding: 15px;
+    margin-top: 20px;
 }
-.social-media-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+
+footer p {
+    color: white;
+    font-size: 16px;
+    margin: 0;
 }
-.social-media-icons img {
+
+
+.social-media a img {
     width: 40px;
-    height: 40px;
+    margin: 5px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social-media a img:hover {
+    transform: scale(1.1);
 }
