@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css?version=0.11">
-    <link rel="stylesheet" href="css/swiper.css?version=0.8">
+    <link rel="stylesheet" href="css/style.css?version=0.12">
+    <link rel="stylesheet" href="css/swiper.css?version=0.9">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rhea-Anne Danao</title>
@@ -45,7 +45,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
+            slidesPerView: "auto",
+            centeredSlides: true,
             spaceBetween: 20,
             loop: true,
             navigation: {
@@ -58,10 +59,12 @@
             },
             breakpoints: {
                 768: {
-                    slidesPerView: 4,
+                    slidesPerView: 3,
+                    centeredSlides: true,
                 },
                 1024: {
-                    slidesPerView: 5,
+                    slidesPerView: 3,
+                    centeredSlides: true,
                 }
             }
         });
