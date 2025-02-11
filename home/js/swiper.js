@@ -1,8 +1,7 @@
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,        
-    centeredSlides: true,    
-    loop: true,              
-    spaceBetween: 20,        
+    slidesPerView: 3,  
+    spaceBetween: 20,
+    loop: true,        
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
