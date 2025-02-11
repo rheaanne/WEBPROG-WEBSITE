@@ -39,46 +39,24 @@ footer p {
     transform: scale(1.1);
 }
 
+/* Sidebar Styling */
 .sidebar {
     width: 200px;
     height: 100vh;
     background-color: pink;
     position: fixed;
-    left: -220px; 
+    left: -220px; /* Initially hidden */
     top: 0;
     padding: 15px;
+    transition: 0.3s;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    transition: 0.3s;
 }
 
-.sidebar h2 {
-    color: white;
-    text-align: center;
+.sidebar.active {
+    left: 0; /* Show sidebar */
 }
 
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin: 15px 0;
-}
-
-.sidebar ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.sidebar ul li a:hover {
-    background-color: #ff69b4;
-}
-
+/* Button to Toggle Sidebar */
 .sidebar-toggle {
     position: fixed;
     left: 10px;
@@ -95,19 +73,4 @@ footer p {
 
 .sidebar-toggle:hover {
     background-color: #ff69b4;
-}
-
-
-.content {
-    transition: 0.3s;
-    margin-left: 0;
-}
-
-
-.sidebar.active {
-    left: 0;
-}
-
-.content.active {
-    margin-left: 220px; 
 }
