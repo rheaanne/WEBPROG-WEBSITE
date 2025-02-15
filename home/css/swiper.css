@@ -11,8 +11,9 @@ body, html {
 }
 .swiper-slide img {
     width: 100%;
-    height: auto;
+    height: 100%;
     max-width: 100%;
+
 }
 .sidebar {
     width: 250px;

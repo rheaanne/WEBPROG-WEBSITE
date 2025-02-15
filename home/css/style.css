@@ -39,13 +39,12 @@ footer p {
     transform: scale(1.1);
 }
 
-/* Sidebar Styling */
 .sidebar {
     width: 200px;
     height: 100vh;
     background-color: pink;
     position: fixed;
-    left: -220px; /* Initially hidden */
+    left: -220px; 
     top: 0;
     padding: 15px;
     transition: 0.3s;
@@ -53,10 +52,9 @@ footer p {
 }
 
 .sidebar.active {
-    left: 0; /* Show sidebar */
+    left: 0; 
 }
 
-/* Button to Toggle Sidebar */
 .sidebar-toggle {
     position: fixed;
     left: 10px;
