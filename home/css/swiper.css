@@ -6,13 +6,9 @@
 
 .swiper-wrapper {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
 }
 
 .swiper-slide {
-    flex: 0 1 30%; 
-    max-width: 30%;
     text-align: center;
     padding: 10px;
 }
@@ -23,4 +19,17 @@
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #f8f9fa;
+    transition: left 0.3s ease;
+}
+
+.sidebar.active {
+    left: 0;
 }
