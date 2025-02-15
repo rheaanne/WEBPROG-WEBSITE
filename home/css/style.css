@@ -124,9 +124,9 @@ body, html {
 }
 
 .swiper-slide img {
+    margin-top: 0cm;
     width: 100%;
     height: auto;
-    border-radius: 10px;
 }
 
 .swiper-pagination {
