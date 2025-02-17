@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css?version=0.32">
+    <link rel="stylesheet" href="css/style.css?version=0.1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rhea-Anne's Cupcake Gallery</title>
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
 </head>
 <body>
+
     <button class="sidebar-toggle" onclick="toggleSidebar()">☰ Menu</button>
 
     <div class="sidebar" id="sidebar">
-        <h2>Menu</h2>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Gallery</a></li>
@@ -31,8 +32,6 @@
             <div class="swiper-slide"><img src="cupcakes/cupcake3.png" alt="Cupcake 3"></div>
             <div class="swiper-slide"><img src="cupcakes/cupcake4.png" alt="Cupcake 4"></div>
             <div class="swiper-slide"><img src="cupcakes/cupcake5.png" alt="Cupcake 5"></div>
-            <div class="swiper-slide"><img src="cupcakes/cupcake6.png" alt="Cupcake 6"></div>
-            <div class="swiper-slide"><img src="cupcakes/cupcake7.png" alt="Cupcake 7"></div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-next"></div>
@@ -48,7 +47,6 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 
