@@ -23,3 +23,8 @@ function prevSlide() {
     index = (index - 1 + images.length) % images.length;
     showSlide();
 }
+
+function toggleMenu() {
+    const menu = document.querySelector("nav");
+    menu.classList.toggle("active");
+}

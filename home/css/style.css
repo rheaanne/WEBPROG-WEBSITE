@@ -11,34 +11,59 @@ body {
 header {
     background-color: #ff6b81;
     color: white;
-    padding: 10px 0;
+    padding: 10px 15px;
     font-size: 1.8rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;  /* Moves elements to edges */
+    align-items: center;
+    position: relative;
 }
 
-/* Navigation */
+/* Move menu toggle to the right */
+.menu-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;  /* Moves menu to the right side */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Navigation Menu */
 nav {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hidden off-screen */
+    width: 250px;
+    height: 100%;
     background-color: #ffb6c1;
-    padding: 10px 0;
+    padding-top: 60px;
+    transition: left 0.3s ease-in-out;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: left;
 }
 
 nav ul li {
-    padding: 10px 0;
+    padding: 15px 20px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
+    display: block;
 }
 
-/* Carousel */
+/* Show Menu when Active */
+nav.active {
+    left: 0;
+}
+
+/* Cupcake Gallery */
 .gallery {
     display: flex;
     justify-content: center;
@@ -62,6 +87,7 @@ nav ul li a {
     margin: 0 10px;
 }
 
+/* Buttons */
 button {
     background: none;
     border: none;
