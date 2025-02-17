@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css?version=0.1">
+    <link rel="stylesheet" href="css/style.css?version=0.2">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rhea-Anne's Cupcake Gallery</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 
-    <button class="sidebar-toggle" onclick="toggleSidebar()">☰ Menu</button>
+    
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+        <h1>Rhea-Anne's Cupcake Gallery <span>🧁</span></h1>
+    </header>
 
-    <div class="sidebar" id="sidebar">
+    
+    <nav id="nav-menu">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Gallery</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <header>
-        <h1>Rhea-Anne's Cupcake Gallery 🧁</h1>
-    </header>
-
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="cupcakes/cupcake1.png" alt="Cupcake 1"></div>
-            <div class="swiper-slide"><img src="cupcakes/cupcake2.png" alt="Cupcake 2"></div>
-            <div class="swiper-slide"><img src="cupcakes/cupcake3.png" alt="Cupcake 3"></div>
-            <div class="swiper-slide"><img src="cupcakes/cupcake4.png" alt="Cupcake 4"></div>
-            <div class="swiper-slide"><img src="cupcakes/cupcake5.png" alt="Cupcake 5"></div>
+    <!-- Cupcake Carousel -->
+    <section class="gallery">
+        <div class="carousel">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel-track">
+                <img src="cupcake1.png" alt="Cupcake 1">
+                <img src="cupcake2.png" alt="Cupcake 2">
+                <img src="cupcake3.png" alt="Cupcake 3">
+            </div>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
+    </section>
 
+   
     <footer>
         <p>&copy; 2024 Rhea-Anne Danao</p>
-        <div class="social-media">
-            <a href="https://www.facebook.com" target="_blank"><img src="https://i.ibb.co/vJGGPhn/icon1.jpg" alt="Facebook"></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="https://i.ibb.co/LpCc5nN/icon2.jpg" alt="Instagram"></a>
-            <a href="https://www.linkedin.com" target="_blank"><img src="https://i.ibb.co/D4Gw2vg/icon3.jpg" alt="LinkedIn"></a>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
 
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 
