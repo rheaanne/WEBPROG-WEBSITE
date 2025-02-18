@@ -10,12 +10,13 @@ header {
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Fixed alignment */
+    align-items: left; /* Fixed alignment */
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
+    align-items: flex-start;
     color: black;
     font-family: 'Lobster', cursive;
 }
@@ -152,6 +153,6 @@ footer p {
 }
 
 .social-icons a img:hover {
-    transform: scale(1.2);
+    transform: scale(0.3);
 }
 
