@@ -131,7 +131,8 @@ nav ul li a {
 
 /* Footer */
 footer {
-    background-color: #ff6b81;
+    margin-top: 20;
+    background-color: #fce4ec;
     color: white;
     padding: 20px;
     text-align: center;
@@ -147,6 +148,7 @@ footer p {
 }
 
 .social-icons a img {
+    align-items: first baseline;
     width: 30px;
     margin: 0 10px;
     transition: transform 0.3s;
