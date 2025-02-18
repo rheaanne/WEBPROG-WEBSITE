@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fce4ec;
+}
+header {
+    background: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+.logo span {
+    color: red;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.text-container h1 {
+    font-size: 48px;
+    color: black;
+}
+.text-container h1 span {
+    color: red;
+}
+.text-container p {
+    font-size: 18px;
+}
+.text-container .desc {
+    color: grey;
+}
+.buttons {
+    margin-top: 20px;
+}
+.buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+}
+.learn {
+    background-color: red;
+    color: white;
+}
+.watch {
+    background-color: transparent;
+    border: 1px solid red;
+    color: red;
+}
+.image-container img {
+    width: 300px;
+    border-radius: 15px;
+}
