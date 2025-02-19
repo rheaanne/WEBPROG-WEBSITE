@@ -152,6 +152,7 @@ footer {
 .footer-line {
     border: none;
     height: 2px;
+    lighting-color: black;
     background-color: #fce4ec;
     margin-bottom: 20px;
 }
