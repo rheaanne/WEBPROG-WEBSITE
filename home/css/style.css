@@ -9,8 +9,15 @@ header {
     background: white;
     padding: 20px;
     display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
     justify-content: space-between;
-    align-items: center; /* Fixed alignment */
+    align-items: center;
 }
 
 .logo {
@@ -24,23 +31,22 @@ header {
     color: red;
 }
 
-nav ul {
+.nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-nav ul li {
+.nav-links li {
     display: inline;
 }
 
-nav ul li a {
+.nav-links li a {
     text-decoration: none;
     color: black;
     font-weight: 600;
 }
 
-/* Other styles remain the same */
 
 .hero {
     display: flex;
@@ -128,11 +134,11 @@ nav ul li a {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
+
 footer {
-    margin-top: 20px; /* Fixed missing unit */
+    margin-top: 20px; 
     background-color: #fce4ec;
-    color: black; /* Fixed color to be visible */
+    color: black; 
     padding: 20px;
     text-align: center;
 }
@@ -153,5 +159,5 @@ footer p {
 }
 
 .social-icons a img:hover {
-    transform: scale(1.1); /* Fixed scale value */
+    transform: scale(1.1); 
 }
