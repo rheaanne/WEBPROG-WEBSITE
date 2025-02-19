@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
+    margin-right: 20;
     padding: 0;
     background-color: #fce4ec;
 }
@@ -103,12 +103,14 @@ header {
     position: relative;
     width: 320px;
     height: 320px;
+    margin-left: 20;
 }
 
 .image-container img {
     width: 100%;
     border-radius: 20px;
     display: block;
+    margin-left: 20
 }
 
 .frame {
@@ -119,6 +121,7 @@ header {
     height: 150%;
     border-radius: 20px;
     border: 10px solid white;
+    margin-left: 20;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -131,6 +134,7 @@ header {
     height: 100px;
     background: #ff3d67;
     border-radius: 50%;
+    margin-left: 20;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -140,7 +144,7 @@ footer {
     background-color: #fce4ec;
     color: black; 
     padding: 20px;
-    text-align: center;
+    text-align: right;
 }
 
 footer p {
@@ -155,6 +159,7 @@ footer p {
 .social-icons a img {
     width: 30px;
     margin: 0 10px;
+    justify-content: right;
     transition: transform 0.3s;
 }
 
