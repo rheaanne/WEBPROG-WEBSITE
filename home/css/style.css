@@ -139,6 +139,8 @@ header {
 }
 
 
+
+
 footer {
     margin-top: 20px; 
     background-color: #fce4ec;
@@ -147,11 +149,12 @@ footer {
     text-align: left;
 }
 
-footer p {
-    margin: 0;
-    font-size: 14px;
+.footer-line {
+    border: none;
+    height: 2px;
+    background-color: #fce4ec;
+    margin-bottom: 20px;
 }
-
 .social-icons {
     margin-top: 10px;
 }
@@ -160,6 +163,7 @@ footer p {
     width: 30px;
     margin: 0 10px;
     justify-content: left;
+    margin-left: 20;
     transition: transform 0.3s;
 }
 
