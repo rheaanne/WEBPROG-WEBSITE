@@ -10,13 +10,12 @@ header {
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: left; /* Fixed alignment */
+    align-items: center; /* Fixed alignment */
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-    align-items: flex-start;
     color: black;
     font-family: 'Lobster', cursive;
 }
@@ -131,9 +130,9 @@ nav ul li a {
 
 /* Footer */
 footer {
-    margin-top: 20;
+    margin-top: 20px; /* Fixed missing unit */
     background-color: #fce4ec;
-    color: white;
+    color: black; /* Fixed color to be visible */
     padding: 20px;
     text-align: center;
 }
@@ -148,13 +147,11 @@ footer p {
 }
 
 .social-icons a img {
-    align-items: first baseline;
     width: 30px;
     margin: 0 10px;
     transition: transform 0.3s;
 }
 
 .social-icons a img:hover {
-    transform: scale(0.3);
+    transform: scale(1.1); /* Fixed scale value */
 }
-
