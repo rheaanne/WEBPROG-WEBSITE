@@ -138,24 +138,6 @@ header {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
-footer {
-    margin-top: 20px; 
-    background-color: #fce4ec;
-    color: black; 
-    padding: 20px;
-    text-align: left;
-}
-
-.footer-line {
-    border: none;
-    height: 2px;
-    lighting-color: black;
-    background-color: #fce4ec;
-    margin-bottom: 20px;
-}
 .social-icons {
     margin-top: 10px;
 }
