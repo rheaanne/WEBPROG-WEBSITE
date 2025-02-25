@@ -101,8 +101,8 @@ header {
 
 .image-container {
     position: relative;
-    width: 320px;
-    height: 320px;
+    width: 1050px;
+    height: px;
     margin-left: 20;
 }
 
@@ -118,7 +118,7 @@ header {
     top: -10px;
     left: -10px;
     width: 100%;
-    height: 150%;
+    height: 100%;
     border-radius: 20px;
     border: 10px solid white;
     margin-left: 20;
