@@ -96,29 +96,37 @@ header {
 }
 
 .buttons button {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 12px 20px;
+    padding: 12px 24px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
     border-radius: 30px;
-    background: linear-gradient(135deg, #ff7eb3, #ff758c);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-    display: inline-block;
+    transition: all 0.3s;
 }
 
 .learn {
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    background-color: #ff3e56;
+    color: white;
+    box-shadow: 0 4px 8px rgba(255, 62, 86, 0.3);
+}
+
+.learn:hover {
+    background-color: #e63244;
+    box-shadow: 0 6px 12px rgba(255, 62, 86, 0.4);
 }
 
 .watch {
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    background: transparent;
+    border: 2px solid #ff3e56;
+    color: #ff3e56;
 }
+
+.watch:hover {
+    background: #ff3e56;
+    color: white;
+}
+
 
 .image-container {
     position: relative;
