@@ -38,8 +38,11 @@ header {
     padding: 0;
 }
 
-.nav-links li {
-    display: inline;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
 }
 
 .nav-links li a {
@@ -49,14 +52,14 @@ header {
     font-size: 18px;
     padding: 12px 20px;
     border-radius: 30px;
-    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    background: linear-gradient(135deg, #ff847c, #ff3e56);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
     display: inline-block;
 }
 
 .nav-links li a:hover {
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    background: linear-gradient(135deg, #ff3e56, #ff847c);
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
