@@ -1,70 +1,77 @@
-/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #ffe3ed;
-    color: #333;
-    margin: 0;
+    margin-right: 20;
     padding: 0;
+    background-color: #fce4ec;
 }
 
-/* Header */
 header {
-    background: #f5a9c0;
-    padding: 15px 0;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: rgb(235, 181, 208);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     color: black;
+    font-family: 'Lobster', cursive;
 }
 
 .logo span {
     color: red;
-    font-style: italic;
 }
 
-/* Navigation */
 .nav-links {
     list-style: none;
+    display: flex;
+    gap: 20px;
     padding: 0;
-    text-align: center;
 }
 
-.nav-links li {
-    display: inline;
-    margin: 0 15px;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
 }
 
 .nav-links li a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 18px;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 30px;
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    background: linear-gradient(135deg, #ff847c, #ff3e56);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
+    display: inline-block;
 }
 
 .nav-links li a:hover {
-    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    background: linear-gradient(135deg, #ff3e56, #ff847c);
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
-
 /* Sidebar */
 .sidebar {
     width: 200px;
     position: fixed;
-    top: 80px;
-    left: 0;
+    top: 200px;
+    left: 30px;
     background: #f8b6cd;
     padding: 20px;
-    height: 100%;
+    border-radius:20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -95,7 +102,7 @@ header {
 
 /* About Section */
 .about {
-    margin-left: 220px;
+    margin-left: 270px;
     padding: 40px;
 }
 
