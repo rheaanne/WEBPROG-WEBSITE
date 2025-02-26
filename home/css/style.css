@@ -21,7 +21,7 @@ header {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     color: black;
     font-family: 'Lobster', cursive;
@@ -45,6 +45,7 @@ header {
     text-decoration: none;
     color: black;
     font-weight: 600;
+    font-size: 20px;
 }
 
 
@@ -56,7 +57,7 @@ header {
 }
 
 .text-container h1 {
-    font-size: 48px;
+    font-size: 50px;
     color: black;
     font-family: 'Lobster', cursive;
 }
@@ -66,7 +67,7 @@ header {
 }
 
 .text-container p {
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Poppins', sans-serif;
     margin-right:20px;
 }
@@ -102,7 +103,7 @@ header {
 
 .image-container {
     position: relative;
-    width: 1000px;
+    width: 900px;
     height: px;
     margin-left: 20;
 }
@@ -146,6 +147,7 @@ header {
 
 .social-icons a img {
     width: 30px;
+    padding-top: 50px;
     margin: 0 10px;
     justify-content: left;
     margin-left: 20;
