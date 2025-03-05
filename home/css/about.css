@@ -1,136 +1,615 @@
+/* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin-right: 20;
+    margin: 0;
     padding: 0;
-    background-color: #fce4ec;
+    font-family: 'Inter', sans-serif;
+    background: #FAE8E0; /* Soft pink background */
+    color: #333;
+    min-height: 100vh;
+    overflow-x: hidden;
+    line-height: 1.6;
 }
 
-header {
-    background: rgb(235, 181, 208);
-    padding: 20px;
-    display: flex;
-    justify-content: space-between; /* Aligns logo left and nav right */
-    align-items: center;
-}
-
+/* Navigation Bar */
 .navbar {
-    width: 100%;
-    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 40px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .logo {
-    font-size: 28px;
+    color: #151314a0;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
     font-weight: bold;
-    color: black;
-    font-family: 'Lobster', cursive;
-    margin-left: 20px; /* Adjusts spacing */
 }
 
-.logo span {
-    color: red;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin-right: 20px; /* Adjusts spacing */
-}
-
-.nav-links li a {
+.nav-links a {
+    margin: 0 15px;
+    color: #151314a0;
     text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 12px 20px;
-    border-radius: 30px;
-    background: linear-gradient(135deg, #ff847c, #ff3e56);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-    display: inline-block;
+    transition: color 0.3s;
 }
 
-.nav-links li a:hover {
-    background: linear-gradient(135deg, #ff3e56, #ff847c);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+.nav-links a:hover {
+    color: #F7CAC9;
 }
 
-
-/* Sidebar */
-.sidebar {
-    background-color: #ff4d6d;
-    padding: 20px;
-    position: fixed;
-    top: 80px;
-    left: 0;
-    width: 220px;
-    height: 100%;
-    border-top-right-radius: 20px;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    margin: 15px 0;
-}
-
-.sidebar ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    padding: 10px;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-
-.sidebar ul li a:hover {
-    background-color: #e63950;
-}
-
-/* Content Layout */
+/* Main Content */
 .container {
-    margin-left: 250px;
-    padding: 40px;
+    padding: 50px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.section-image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* Main Content */
+.container {
+    padding: 50px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-h2 {
+/* About Me Section */
+.section1 {
+    padding: 60px 5%;
+    max-width: 1200px; /* Limit width */
+    margin: 50px auto; /* Centering */
+}
+
+.section1 h2 {
     font-size: 28px;
-    font-weight: 700;
-    color: #ff4d6d;
-}
-
-p {
-    color: #555;
-    line-height: 1.8;
-    font-size: 16px;
-}
-
-/* Footer */
-footer {
-    background-color: #f8a5c2;
-    color: #333;
-    text-align: center;
-    padding: 15px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
     font-weight: bold;
+    color: #e17979; /* Red color for heading */
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 15px;
+    border-bottom: 2px solid #e17979; /* Underline effect */
+    display: inline-block; /* Makes underline fit text */
+}
+
+/* Flex Container for Text and Image */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items for responsiveness */
+    gap: 40px; /* Space between text and image */
+    align-items: center; /* Center items vertically */
+}
+
+/* Text Container */
+.text-container {
+    flex: 1; /* Take available space */
+    max-width: 700px; /* Limit text width for readability */
+}
+
+.text-container h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.3; /* Improved readability */
+}
+
+.text-container h1 strong {
+    color: #e17979; /* Red color for name */
+}
+
+.text-container h3 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6; /* Improved readability */
+}
+
+.text-container h3 strong {
+    color: #4a90e2; /* Blue color for highlights */
+}
+
+.text-container p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6; /* Improved readability */
+    margin-bottom: 20px;
+}
+
+.text-container p strong {
+    color: #4a90e2; /* Blue color for highlights */
+}
+
+/* Image Container */
+.image-container {
+    flex: 1; /* Take available space */
+    max-width: 400px; /* Limit image width */
+    text-align: center; /* Center the image */
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 15px; /* Rounded corners for image */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.image-container img:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section1 {
+        padding: 40px 5%;
+    }
+
+    .section1 h2 {
+        font-size: 24px;
+    }
+
+    .flex-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        gap: 20px;
+    }
+
+    .text-container h1 {
+        font-size: 28px;
+    }
+
+    .text-container h3 {
+        font-size: 18px;
+    }
+
+    .text-container p {
+        font-size: 16px;
+    }
+
+    .image-container {
+        max-width: 100%; /* Full width for image on small screens */
+    }
+}
+/* Education & Achievements Section */
+.section2 {
+    padding: 60px 5%;
+    background: #fff; /* White background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 1200px; /* Limit width */
+    margin: 50px auto; /* Centering */
+    border-left: 8px solid #e17979; /* Stylish left border */
+}
+
+.section2 h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e17979; /* Red color for heading */
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 15px;
+    border-bottom: 2px solid #e17979; /* Underline effect */
+    display: inline-block; /* Makes underline fit text */
+}
+
+/* Education Grid Layout */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+}
+
+/* Education Item Styling */
+.education-item {
+    background: #f9f9f9; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between icon and text */
+}
+
+.education-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.education-item i {
+    font-size: 32px; /* Icon size */
+    color: #e17979; /* Red color for icons */
+}
+
+.education-details h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.education-details p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6; /* Improved readability */
+    margin-bottom: 5px;
+}
+
+.education-details ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.education-details ul li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    padding-left: 20px; /* Space for custom bullet */
+    position: relative; /* For custom bullet positioning */
+}
+
+.education-details ul li::before {
+    content: "✔";
+    color: #e17979; /* Red color for custom bullet */
+    font-weight: bold;
+    position: absolute; /* Position the bullet */
+    left: 0; /* Align bullet to the left */
+    top: 0; /* Align bullet to the top */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section2 {
+        padding: 40px 5%;
+    }
+
+    .section2 h2 {
+        font-size: 24px;
+    }
+
+    .education-grid {
+        grid-template-columns: 1fr; /* Stack items vertically on small screens */
+    }
+}
+
+/* IT Experience Section */
+.section3 {
+    padding: 60px 5%;
+    background: #f9f9f9; /* Light gray background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 1200px; /* Limit width */
+    margin: 50px auto; /* Centering */
+    border-left: 8px solid #4a90e2; /* Stylish blue left border */
+}
+
+.section3 h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4a90e2; /* Blue color for heading */
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 15px;
+    border-bottom: 2px solid #4a90e2; /* Underline effect */
+    display: inline-block; /* Makes underline fit text */
+}
+
+/* Flex Container for Icons and Text */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items for responsiveness */
+    gap: 30px; /* Space between icons and text */
+    align-items: center; /* Center items vertically */
+}
+
+/* Tech Icons List */
+.tech-icons {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Wrap icons for responsiveness */
+    gap: 20px; /* Space between icons */
+}
+
+.tech-icons li {
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    background: #fff; /* White background for icons */
+    padding: 10px 20px;
+    border-radius: 8px; /* Rounded corners for icons */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.tech-icons li:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Icon Styling */
+.tech-icons li i {
+    font-size: 24px; /* Icon size */
+    color: #4a90e2; /* Blue color for icons */
+}
+
+/* Paragraph Styling */
+.section3 p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6; /* Improved readability */
+    flex: 1; /* Allow text to take remaining space */
+    margin: 0; /* Remove default margin */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section3 {
+        padding: 40px 5%;
+    }
+
+    .section3 h2 {
+        font-size: 24px;
+    }
+
+    .flex-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        gap: 20px;
+    }
+
+    .tech-icons {
+        justify-content: center; /* Center icons on small screens */
+    }
+
+    .section3 p {
+        font-size: 16px;
+        text-align: center; /* Center text on small screens */
+    }
+}
+
+/* Hobbies & Interests Section */
+.section4 {
+    padding: 60px 5%;
+    background: #fff; /* White background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 1200px; /* Limit width */
+    margin: 50px auto; /* Centering */
+    border-left: 8px solid #e17979; /* Stylish left border */
+}
+
+.section4 h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e17979; /* Red color for heading */
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 15px;
+    border-bottom: 2px solid #e17979; /* Underline effect */
+    display: inline-block; /* Makes underline fit text */
+}
+
+/* Flex Container for Hobbies */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items for responsiveness */
+    gap: 30px; /* Space between icons and text */
+    align-items: center; /* Center items vertically */
+}
+
+/* Hobby Icons Grid */
+.hobby-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between icons */
+    flex: 1; /* Take available space */
+}
+
+/* Hobby Item Styling */
+.hobby-item {
+    text-align: center;
+    background: #f9f9f9; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.hobby-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.hobby-item i {
+    font-size: 32px; /* Icon size */
+    color: #e17979; /* Red color for icons */
+    margin-bottom: 10px;
+}
+
+.hobby-item p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+/* Hobby Description */
+.hobby-description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6; /* Improved readability */
+    flex: 1; /* Take available space */
+    margin: 0; /* Remove default margin */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section4 {
+        padding: 40px 5%;
+    }
+
+    .section4 h2 {
+        font-size: 24px;
+    }
+
+    .flex-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        gap: 20px;
+    }
+
+    .hobby-icons {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
+    }
+
+    .hobby-description {
+        text-align: center; /* Center text on small screens */
+    }
+}
+
+/* Goals in Life Section */
+.section5 {
+    padding: 60px 5%;
+    background: #f9f9f9; /* Light gray background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 1200px; /* Limit width */
+    margin: 50px auto; /* Centering */
+    border-left: 8px solid #4a90e2; /* Stylish blue left border */
+}
+
+.section5 h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4a90e2; /* Blue color for heading */
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 15px;
+    border-bottom: 2px solid #4a90e2; /* Underline effect */
+    display: inline-block; /* Makes underline fit text */
+}
+
+/* Flex Container for Goals */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items for responsiveness */
+    gap: 30px; /* Space between icons and text */
+    align-items: center; /* Center items vertically */
+}
+
+/* Goal Icons Grid */
+.goal-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between icons */
+    flex: 1; /* Take available space */
+}
+
+/* Goal Item Styling */
+.goal-item {
+    text-align: center;
+    background: #fff; /* White background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.goal-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.goal-item i {
+    font-size: 32px; /* Icon size */
+    color: #4a90e2; /* Blue color for icons */
+    margin-bottom: 10px;
+}
+
+.goal-item p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+/* Goal Description */
+.goal-description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6; /* Improved readability */
+    flex: 1; /* Take available space */
+    margin: 0; /* Remove default margin */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section5 {
+        padding: 40px 5%;
+    }
+
+    .section5 h2 {
+        font-size: 24px;
+    }
+
+    .flex-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        gap: 20px;
+    }
+
+    .goal-icons {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
+    }
+
+    .goal-description {
+        text-align: center; /* Center text on small screens */
+    }
+}
+/* Tech Icons */
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.tech-icons li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Footer Section */
+.footer {
+    background: rgba(255, 255, 255, 0.2);/* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    padding: 40px;
+    text-align: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.3); /* Top border */
+    margin-top: 50px; /* Spacing above the footer */
+}
+
+.footer-nav {
+    margin-bottom: 10px; /* Spacing between links and copyright */
+}
+
+.footer-nav a {
+    margin: 0 15px; /* Spacing between links */
+    color: rgb(197, 152, 152); /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px;
+    margin-bottom: 100px;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #F7CAC9; /* Hover color */
+}
+
+.footer-copyright p {
+    color: rgba(29, 28, 28, 0.622); /* Text color */
+    margin-top: 30px; /* Spacing above the text */
+    font-size: 14px;
 }

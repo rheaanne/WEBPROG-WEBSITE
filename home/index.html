@@ -3,99 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rhea Web</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Rhea-Anne Danao | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Rhea <span>Web</span></div>
-        <nav>
-            <div class="nav-links">
-                <a href="#home">HOME</a>
-                <a href="#resources">RESOURCES</a>
-                <a href="#about">ABOUT</a>
-                <a href="#contact">CONTACT</a>
-            </div>
-        </nav>
-    </header>
 
-    <section id="home" class="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Showcasing my journey, skills, and projects.</p>
-    </section>
-
-    <section class="gallery">
-        <img src="images/eyya.jpg" alt="Nature Walk">
-        <img src="images/pic1.jpg" alt="Beach Vibes">
-        <img src="images/rhea3.jpg" alt="Workspace">
-        <img src="images/rhea2.jpg" alt="Seaside Look">
-    </section>
-
-    <section class="resources">
-        <h2>Explore Our <span>Resources</span></h2>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide card" style="background: #6200ea;">
-                    <h3>Resource One</h3>
-                    <p>Description of the resource.</p>
-                    <button>Explore</button>
-                </div>
-                <div class="swiper-slide card" style="background: #03a9f4;">
-                    <h3>Resource Two</h3>
-                    <p>Description of the resource.</p>
-                    <button>Explore</button>
-                </div>
-                <div class="swiper-slide card" style="background: #e91e63;">
-                    <h3>Resource Three</h3>
-                    <p>Description of the resource.</p>
-                    <button>Explore</button>
-                </div>
-                <div class="swiper-slide card" style="background: #ff9800;">
-                    <h3>Resource Four</h3>
-                    <p>Description of the resource.</p>
-                    <button>Explore</button>
-                </div>
-                <div class="swiper-slide card" style="background: #4caf50;">
-                    <h3>Resource Five</h3>
-                    <p>Description of the resource.</p>
-                    <button>Explore</button>
-                </div>
-                <div class="swiper-slide card" style="background: #ff5722;">
-                    <h3>Resource Six</h3>
-                    <p>Description of the resource.</p>
-                    <button>Explore</button>
-                </div>
-                <div class="swiper-slide card" style="background: #795548;">
-                    <h3>Resource Seven</h3>
-                    <p>Description of the resource.</p>
-                    <button>Explore</button>
-                </div>
-                <div class="swiper-slide card" style="background: #607d8b;">
-                    <h3>Resource Eight</h3>
-                    <p>Description of the resource.</p>
-                    <button>Explore</button>
-                </div>
-                <div class="swiper-slide card" style="background: #607d8b;">
-                    <h3>Resource Eight</h3>
-                    <p>Description of the resource.</p>
-                    <button>Explore</button>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+    <nav class="navbar">
+        <div class="logo">Rhea-Anne</div>
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="reference.html">REFERENCE</a>
+            <a href="contact.html">CONTACT</a>
         </div>
-    </section>
+    </nav>
 
-    <div id="contact" class="footer">
-        <h2>Rhea <span>Danao</span></h2>
-        <p>2025 Rhea Web. All rights reserved.</p>
+    <div class="main-container">
+        <div class="container">
+            <h1>Hi, I'm Rhea-Anne Danao, a BSIT student at Asia Pacific College.</h1>
+            <!-- Optional: Add a purpose box inside the container -->
+            <div class="purpose-box">
+                <p>Driven by a passion for technology and innovation, I aim to create solutions that make a positive impact on the world. Let's build a better future together!</p>
+            </div>
+        </div>
+    
+        <div class="profile">
+            <img src="images/pic1.jpg" alt="Profile Picture">
+        </div>
+    </div>
+    <!-- Picture Gallery Section -->
+    <div class="gallery-container">
+        <h2>PICTURE GALLERY</h2>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="images/r3.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="images/r2.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="images/r1.png" alt="Image 3"></div>
+                <div class="slide"><img src="images/r2.png" alt="Image 4"></div>
+                <div class="slide"><img src="images/r3.png" alt="Image 5"></div>
+                <div class="slide"><img src="images/r4.png" alt="Image 6"></div>
+                <div class="slide"><img src="images/r5.png" alt="Image 7"></div>
+                <div class="slide"><img src="images/r6.png" alt="Image 8"></div>
+            </div>
+        </div>
+
+        <!-- Button to Show All Pictures -->
+        <button class="show-all-btn" onclick="showAllImages()">Show All Pictures</button>
+
+        <!-- Full Picture Grid (Hidden by Default) -->
+        <div class="all-pictures">
+            <button class="close-btn" onclick="closeAllImages()">Close</button>
+            <img src="images/r3.jpg" alt="Image 1">
+            <img src="images/r2.jpg" alt="Image 2">
+            <img src="images/r1.png" alt="Image 3">
+            <img src="images/r2.png" alt="Image 4">
+            <img src="images/r3.png" alt="Image 5">
+            <img src="images/r4.png" alt="Image 6">
+            <img src="images/r5.png" alt="Image 7">
+            <img src="images/r6.png" alt="Image 8">
+        </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>
-    <script src="js/index.js"></script>
+    <!-- About Me Section -->
+    <div class="about-me">
+        <div class="about-image">
+            <img src="images/eyya.jpg" alt="About Me Image">
+        </div>
+        <div class="about-content">
+            <h1>About Me</h1>
+            <h2>I am a bubbly person, outgoing, and always up for a good time.</h2>
+            <p>
+                I am a proud province girl from Isabela, deeply connected to my roots and inspired by the simplicity and warmth of rural life. Growing up in a province has shaped me into a hardworking, resourceful, and determined individual who values family, culture, and community. My upbringing has taught me the importance of perseverance and embracing challenges with a positive mindset.
+            </p>
+            <button class="read-more-btn">READ MORE</button>
+        </div>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="social-media">
+        <h2>Social Media</h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com/iem_eyya?igsh=OGI1aWdiMXJxMmJk" target="_blank" class="social-link">
+                <img src="images/ins.png" alt="Instagram">
+                <span>Instagram</span>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61565180164018&mibextid=ZbWKwL" target="_blank" class="social-link">
+                <img src="images/face.png" alt="Facebook">
+                <span>Facebook</span>
+            </a>
+            <a href="http://www.linkedin.com/in/rhea-anne-danao-a420bb289" target="_blank" class="social-link">
+                <img src="images/link.png" alt="LinkedIn">
+                <span>LinkedIn</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="reference.html">Reference</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright © 2025 Rhea-Anne Danao | Powered by Rhea-Anne</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

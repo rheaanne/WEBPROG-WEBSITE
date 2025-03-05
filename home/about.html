@@ -1,90 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/about.css?version=0.5">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>About Me - Rhea-Anne Danao</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Rhea<span>web</span></div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="sidebar">
-        <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#education">Education & Achievements</a></li>
-            <li><a href="#experience">IT Experience</a></li>
-            <li><a href="#hobbies">Hobbies & Interests</a></li>
-            <li><a href="#goals">Goals in Life</a></li>
-        </ul>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Rhea-Anne</div>
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="reference.html">REFERENCE</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+    </nav>
+<!--  -->
+<!-- About Me Page -->
+<!-- About Me Section -->
+<div id="about" class="section1">
+    <h2>About Me</h2>
+    <div class="flex-container">
+        <div class="text-container">
+            <h1>Hello, I'm <strong>Rhea-Anne Danao</strong>, but you can call me "Eyya."</h1>
+            <h3>I was born and raised in the province of <strong>Isabela</strong>, where I spent most of my childhood surrounded by nature, simplicity, and strong community values.</h3>
+            <p>My journey took an unexpected turn when an anonymous person gave me the opportunity to continue my studies in <strong>Makati</strong>. Moving from a small town to the bustling city was a significant challenge, but it also opened doors to new experiences, opportunities, and personal growth.</p>
+            <p>I have always been passionate about <strong>technology and problem-solving</strong>. My curiosity about computers led me to pursue a <strong>Bachelor of Science in Information Technology</strong>, where I gained hands-on experience in programming, software development, and system analysis. I enjoy learning new things, whether it's coding in <strong>Java</strong>, designing user-friendly interfaces, or researching the latest tech trends.</p>
+        </div>
+        <div class="image-container">
+            <img src="images/r1.jpg" alt="Rhea-Anne Danao">
+        </div>
     </div>
+</div>
 
-    <!-- About Me Section -->
-    <section id="about-me">
-        <div class="container">
-            <h2>About Me</h2>
-            <img src="images/about.jpg" alt="About Me" class="section-image">
-            <p>Hello, I'm Rhea. You can call me "Eyya." I'm a province girl from Isabela. An anonymous person gave me the opportunity to continue my studies at a college here in Makati. I never thought I would leave my small town and move to the big city.</p>
+        <!-- Education & Achievements Section -->
+<div id="education" class="section2">
+    <h2>Education & Achievements</h2>
+    <div class="education-grid">
+        <div class="education-item">
+            <i class="fas fa-school"></i> <!-- School icon -->
+            <div class="education-details">
+                <h3>Elementary</h3>
+                <p>Binguang Elementary School</p>
+                <p>2016 - 2017</p>
+            </div>
         </div>
-    </section>
-
-    <!-- Education & Achievements Section -->
-    <section id="education">
-        <div class="container">
-            <h2>Education & Achievements</h2>
-            <img src="images/education.jpg" alt="Education" class="section-image">
-            <p><strong>Elementary:</strong> Binguang Elementary School (2016-2017)</p>
-            <p><strong>Secondary:</strong> San Pablo National High School (2020-2021) - Graduated with Honors</p>
-            <p><strong>Senior High:</strong> San Pablo National High School (2022-2023) - Graduated with Honors</p>
-            <p><strong>Tertiary:</strong> Asia Pacific College (2022-2023)</p>
-            <ul>
-                <li>Executive Director of APC-MSC Membership Committee</li>
-                <li>With Honors (2023-2024)</li>
-            </ul>
-            <p><strong>Course:</strong> Bachelor of Science in Information Technology</p>
+        <div class="education-item">
+            <i class="fas fa-graduation-cap"></i> <!-- Graduation icon -->
+            <div class="education-details">
+                <h3>Secondary</h3>
+                <p>San Pablo National High School</p>
+                <p>2020 - 2021 | Graduated with Honors</p>
+            </div>
         </div>
-    </section>
-
-    <!-- IT Experience Section -->
-    <section id="experience">
-        <div class="container">
-            <h2>IT Experience</h2>
-            <img src="images/experience.jpg" alt="IT Experience" class="section-image">
-            <p>In my first year, I gained experience coding with Java and Python. I learned basic tools for using a computer, though my knowledge was limited in high school.</p>
+        <div class="education-item">
+            <i class="fas fa-graduation-cap"></i> <!-- Graduation icon -->
+            <div class="education-details">
+                <h3>Senior High</h3>
+                <p>San Pablo National High School</p>
+                <p>2022 - 2023 | Graduated with Honors</p>
+            </div>
         </div>
-    </section>
-
-    <!-- Hobbies & Interests Section -->
-    <section id="hobbies">
-        <div class="container">
-            <h2>Hobbies & Interests</h2>
-            <img src="images/hobbies.jpg" alt="Hobbies" class="section-image">
-            <p>I love reading books, exploring technology, engaging in sports, and finding all sorts of engaging things to do.</p>
+        <div class="education-item">
+            <i class="fas fa-university"></i> <!-- University icon -->
+            <div class="education-details">
+                <h3>Tertiary</h3>
+                <p>Asia Pacific College</p>
+                <p>2022 - 2023</p>
+                <ul>
+                    <li>Executive Director of APC-MSC Membership Committee</li>
+                    <li>With Honors (2023 - 2024)</li>
+                </ul>
+            </div>
         </div>
-    </section>
-
-    <!-- Goals in Life Section -->
-    <section id="goals">
-        <div class="container">
-            <h2>Goals in Life</h2>
-            <img src="images/goals.jpg" alt="Goals" class="section-image">
-            <p>My goal is to become a successful IT professional who can create meaningful digital solutions. I aspire to develop innovative software that can help people in different ways. Aside from my career, I want to give back to my community and help students like me who dream of achieving something great despite challenges.</p>
-            <p>I also aim to continuously learn and grow in the IT field, mastering new programming languages and technologies to stay ahead in the industry. Additionally, I hope to mentor and inspire other aspiring developers, sharing my knowledge and experiences with them.</p>
+        <div class="education-item">
+            <i class="fas fa-laptop-code"></i> <!-- IT icon -->
+            <div class="education-details">
+                <h3>Course</h3>
+                <p>Bachelor of Science in Information Technology</p>
+            </div>
         </div>
-    </section>
+    </div>
+</div>
 
-    <footer>
-        <p>&copy; 2025 Rheaweb. All rights reserved.</p>
+
+      <!-- IT Experience Section -->
+<div id="experience" class="section3">
+    <h2>IT Experience</h2>
+    <div class="flex-container">
+        <ul class="tech-icons">
+            <li><i class="fab fa-java"></i> Java</li>
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fab fa-html5"></i> HTML</li>
+        </ul>
+        <p>In my first year, I gained experience coding with <strong>Java</strong> and <strong>Python</strong>. I learned basic tools for using a computer, though my knowledge was limited in high school.</p>
+    </div>
+</div>
+
+       <!-- Hobbies & Interests Section -->
+<div id="hobbies" class="section4">
+    <h2>Hobbies & Interests</h2>
+    <div class="flex-container">
+        <div class="hobby-icons">
+            <div class="hobby-item">
+                <i class="fas fa-book"></i> <!-- Book icon -->
+                <p>Reading Books</p>
+            </div>
+            <div class="hobby-item">
+                <i class="fas fa-laptop-code"></i> <!-- Technology icon -->
+                <p>Exploring Technology</p>
+            </div>
+            <div class="hobby-item">
+                <i class="fas fa-futbol"></i> <!-- Sports icon -->
+                <p>Engaging in Sports</p>
+            </div>
+            <div class="hobby-item">
+                <i class="fas fa-lightbulb"></i> <!-- Creative icon -->
+                <p>Creative Activities</p>
+            </div>
+        </div>
+        <p class="hobby-description">I love <strong>reading books</strong>, exploring <strong>technology</strong>, engaging in <strong>sports</strong>, and finding all sorts of exciting and creative things to do.</p>
+    </div>
+</div>
+
+ <!-- Goals in Life Section -->
+<div id="goals" class="section5">
+    <h2>Goals in Life</h2>
+    <div class="flex-container">
+        <div class="goal-icons">
+            <div class="goal-item">
+                <i class="fas fa-laptop-code"></i> <!-- IT Career icon -->
+                <p>Pursue a Career in IT</p>
+            </div>
+            <div class="goal-item">
+                <i class="fas fa-building"></i> <!-- Tech Company icon -->
+                <p>Establish a Tech Company</p>
+            </div>
+            <div class="goal-item">
+                <i class="fas fa-globe"></i> <!-- Global Impact icon -->
+                <p>Make a Global Impact</p>
+            </div>
+        </div>
+        <p class="goal-description">My dream is to pursue a career in <strong>IT</strong> and eventually establish my own <strong>tech company</strong>, creating solutions that can make a meaningful impact in the world.</p>
+    </div>
+</div>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="reference.html">Reference</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright © 2025 Rhea-Anne Danao | Powered by Rhea-Anne</p>
+        </div>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
